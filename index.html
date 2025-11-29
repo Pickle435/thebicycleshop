@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Set the viewport to ensure the website neat on all devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The Bicylce Shop" >
+	<title>The Bicycle Shop. | Home </title>
+	<!-- links the 2 stylesheets with style being general and index specific to this page -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="index.css" >
+</head>
+
+<body>
+	<header>
+		<!-- heading name to the header section of the page -->
+		<h1>The Bicycle Shop.</h1> 
+		<!-- displays hamburger image for the mobile devices -->
+		<!-- this will expand the menu on mobile devides-->
+		<!-- it will display the hambuger menu when the box is checked using CSS-->
+		<!-- hidden checkbox is used to trigger the CSS rules to show or hide the hamburger menu -->
+        <label for="hamburger_checkbox">
+              <img id="hamburger_image" src="images/hamburger-menu.svg" alt="">
+              <span class="visually-hidden">Menu</span>
+        </label>
+        <input id="hamburger_checkbox" type="checkbox">
+		<!-- this allows the navigation inside the header-->
+		<nav>
+			<a class="active_nav" href="index.html">Home</a>
+			<a href="photos.html">Photos</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+	<main>
+		<aside>
+			<!-- this puts in 4 links on the left hand side panel which will open a tab using _blank as the target -->
+			<a href="https://historycooperative.org/the-history-of-bicycles/">The History of Bicycles</a>
+			<a href="https://en.wikipedia.org/wiki/Bicycle">About Bicycles</a>
+			<a href="https://biketips.com/types-of-bicycles/">Types of Bicycles</a>
+			<a href="https://bicyclenetwork.com.au/rides-and-events/">Upcoming Bicycle Events</a>
+		</aside>
+		<div>
+
+            <!-- this input will change the size of the image depending what screen size you use-->   
+                <img id="main_image"
+                srcset="background480.jpg 480w,
+                        background960.jpg 960w,
+                        background1920.jpg 1920w"
+                        sizes="(max-width: 480px) 480px,
+                        (max-width: 960px) 960px,
+                        (max-width: 1920px) 1920px"
+                        src="1920w/background.jpg"
+                title="Bicycle with orange wheels in front of a white wall"
+                alt="Bicycle with orange wheel">
+			<!-- article below the the hero image -->
+			<article>
+				<h2>The Bicycle Shop. info</h2>
+				<p>Bespoke, hand crafted bicycles made from premium materials with timeless designs that's built to last.
+                 With so many options available, choosing the right type of bicycle can be a daunting task. Cycling is more than just a mode of transportation; it’s a lifestyle, a sport, and a means of adventure.</p>
+			</article>
+
+		</div>
+	</main>
+
+	<footer>
+        <p>&copy;2025 The Bicycle Shop. Site content and imagery used under appropriate license and attribution from unsplash.com </p>      
+	</footer>
+
+</body>
+</html>
+

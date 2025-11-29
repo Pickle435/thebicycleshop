@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The Bicycle Shop." >
+	<title>The Bicycle Shop. | Contact </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="contact.css" >
+</head>
+
+<body>
+
+	<header>
+		<h1>The Bicycle Shop.</h1> 
+		<!-- the hambuger image will display for mobile devices-->
+        <label for="hamburger_checkbox">
+              <img id="hamburger_image" src="images/hamburger-menu.svg" alt="">
+    	      <span class="visually-hidden">Menu</span>
+        </label>
+        <input id="hamburger_checkbox" type="checkbox">
+		<!-- this puts the navigation inside the header -->
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="photos.html">Photos</a>
+			<a href="about.html">About</a>
+			<a class="active_nav" href="contact.html">Contact</a>
+		</nav>
+	</header>
+	<!-- displays the contact form. -->
+    <form id="contact_form">
+		<label for="name">Name:</label><br >
+		<input type="text" id="name" name="name" ><br >
+		<label for="email">Email:</label><br >
+		<input type="email" id="email" name="email" ><br >
+		<label for="message">Message:</label><br >
+		<textarea id="message" name="message"></textarea><br ><br >
+		<button type="submit" >Submit</button><br >
+		<button type="reset">Reset</button>
+	</form>
+
+    <footer>
+        <p>&copy;2025 The Bicycle Shop. Site content and imagery used under appropriate license and attribution from unsplash.com</p>      
+	</footer>
+
+</body> 
+</html>

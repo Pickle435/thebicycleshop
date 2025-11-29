@@ -1,0 +1,121 @@
+/* This is the General CSS*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #E3DFDE;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+	margin: 0;
+}
+
+/* Mobile First View: in header.css */
+
+/* Style the header which contains the navigation links */
+header {
+    background-color: #ff8c00;
+    overflow: hidden;
+  }
+  
+  /* Hide the checkbox which we use for the hamburger menu functionality */
+  #hamburger_checkbox {
+    display: none;
+  }
+  
+  /* Style the image we use as a label for the hamburger menu checkbox */
+  #hamburger_image {
+    background-color: white;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 10%;
+  }
+  
+  
+  /* Show or hide the navigation links depending on whether the hamburger menu checkbox is checked or not */
+  input[id="hamburger_checkbox"]:not(:checked) + nav {
+    display: none;
+  }
+  
+  /* Style the heading */
+  h1 {
+    color: #000000;
+    float: left;
+    padding: 0 20px;
+    width: 100%;
+  }
+  
+  
+  /* Style the links inside the navigation bar */
+  nav a {
+    color: #000000;							
+    float: left;
+    font-size: 17px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  
+  /* Change the color of links when hover over links */
+  nav a:hover {
+    background-color: #4665ff;
+    color: #fffff0;
+  }
+  
+  /* Change the color of links on focus using tab key */
+  nav a:focus {
+    background-color: white;
+    color: black;
+    outline: none;
+  }
+  
+  /* Change the color of the current link */
+  .active_nav {
+    background-color: #094dde;
+    color: white;
+  }
+
+  /* Changes the footer wrap colour and the text coloutr */
+footer {
+	background: #a3a6aa;
+  color: #000000;
+	padding: 32px;
+	text-align: center;
+	width: 100%;
+}
+  
+   /* For desktop: */
+  @media only screen and (min-width: 768px) {
+  
+        /* Hide the hamburger menu image */
+        #hamburger_image {
+          display: none;
+        }
+  
+        /* Show the navigation links */
+        input[id="hamburger_checkbox"]:not(:checked) + nav {
+          display:block
+        }
+  
+        /* Style the heading */
+        h1 {
+          text-align: left;
+          width: 390px;
+        }
+  
+        /* Style the navigation bar */
+        nav {
+          float: right;
+        }
+  
+        /* Style the links within the navigation bar */
+        nav a {
+          width: auto;
+        }
+  }
+  
+  
